@@ -1,0 +1,12 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://stats:stats2468@ds017736.mlab.com:17736/statistics",
+      "NODE_ENV": "production"
+    }
+  },
+  "private": {
+  },
+  "public": {
+  }
+}

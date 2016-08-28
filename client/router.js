@@ -1,6 +1,7 @@
 
 Router.configure({
-  layoutTemplate: 'app_container'
+  layoutTemplate: 'app_container',
+  loadingTemplate: 'loading'
 });
 
 

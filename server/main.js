@@ -7,5 +7,6 @@ if (Meteor.is_server) {
 
         // in case we want to inspect other process environment variables
         //console.log(JSON.stringify(process.env));
+
     });
 }
