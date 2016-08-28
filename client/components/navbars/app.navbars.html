@@ -1,0 +1,74 @@
+
+<template name="headerNavbar">
+  <nav id="headerNavbar" class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Statistics Sampler</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="hidden-when-small nav navbar-nav">
+        <li><a href="#">{{ getSelectedGraph }}</a></li>
+      </ul>
+      <ul class="hidden-when-large nav navbar-nav">
+        <li><a href="/barchart"><span class="pictographs">4  </span>Bar</a></li>
+        <li><a href="/ultrasimple"><span class="pictographs">4  </span>Ultrasimple</a></li>
+        <li><a href="/simple"><span class="pictographs">4  </span>Simple</a></li>
+        <li><a href="/scatter"><span class="pictographs">4  </span>Scatter</a></li>
+        <li><a href="/multibar"><span class="pictographs">4  </span>Multibar</a></li>
+        <li><a href="/horizontalbar"><span class="pictographs">4  </span>Horizontal Bar</a></li>
+        <li><a href="/cumulativeline"><span class="pictographs">4  </span>Cumulative Line</a></li>
+        <li><a href="/viewfinder"><span class="pictographs">4  </span>Viewfinder Chart</a></li>
+        <li><a href="/stream"><span class="pictographs">4  </span>Stream</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li><a href="#">Link</a></li>-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/barchart"><span class="pictographs">4  </span>Bar</a></li>
+            <li><a href="/ultrasimple"><span class="pictographs">4  </span>Ultrasimple</a></li>
+            <li><a href="/simple"><span class="pictographs">4  </span>Simple</a></li>
+            <li><a href="/scatter"><span class="pictographs">4  </span>Scatter</a></li>
+            <li><a href="/multibar"><span class="pictographs">4  </span>Multibar</a></li>
+            <li><a href="/horizontalbar"><span class="pictographs">4  </span>Horizontal Bar</a></li>
+            <li><a href="/cumulativeline"><span class="pictographs">4  </span>Cumulative Line</a></li>
+            <li><a href="/viewfinder"><span class="pictographs">4  </span>Viewfinder Chart</a></li>
+            <li><a href="/stream"><span class="pictographs">4  </span>Stream</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</template>
+
+
+
+<template name="footerNavbar">
+  <footer id="footerNavbar">
+    <nav id="navBarFooter" class="hidden-when-small navbar navbar-fixed-bottom navbar-default" role="navigation">
+      <div class="navbar-footer">
+        <ul class="nav navbar-nav">
+          <li><a href="/barchart"><span class="pictographs">4  </span>Bar</a></li>
+          <li><a href="/ultrasimple"><span class="pictographs">4  </span>Ultrasimple</a></li>
+          <li><a href="/simple"><span class="pictographs">4  </span>Simple</a></li>
+          <li><a href="/scatter"><span class="pictographs">4  </span>Scatter</a></li>
+          <li><a href="/multibar"><span class="pictographs">4  </span>Multibar</a></li>
+          <li><a href="/horizontalbar"><span class="pictographs">4  </span>Horizontal Bar</a></li>
+          <li><a href="/cumulativeline"><span class="pictographs">4  </span>Cumulative Line</a></li>
+          <li><a href="/viewfinder"><span class="pictographs">4  </span>Viewfinder Chart</a></li>
+          <li><a href="/stream"><span class="pictographs">4  </span>Stream</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+</template>
+
+
+

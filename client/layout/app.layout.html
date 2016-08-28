@@ -1,0 +1,15 @@
+<head>
+  <title>D3 Statistics Demo with Meteor</title>
+</head>
+
+
+<template name="app_container">
+  {{> headerNavbar }}
+  {{> leftSidebar }}
+
+  {{> yield }}
+
+  {{> rightSidebar }}
+  {{> footerNavbar }}
+  <div class="hidden">{{ resize }}</div>
+</template>

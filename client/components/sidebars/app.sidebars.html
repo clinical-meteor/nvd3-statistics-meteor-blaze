@@ -1,0 +1,32 @@
+<template name="leftSidebar">
+  {{#with currentRecord }}
+  <div id="leftSidebar" class="hide-for-medium hide-for-small left-anchored fullheight sidebar panel {{getVisibility}}">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <p>A simple statistics sampler demo, using the D3 graphing libraries, Node.js web server, and Mongo document oriented database.  Click buttons at bottom to select graphs.</p>
+      </li>
+      <li class="list-group-item">{{ _id }}</li>
+      <li class="list-group-item">{{ x }}</li>
+      <li class="list-group-item">{{ sin }}</li>
+      <li class="list-group-item">{{ cos }}</li>
+      <li class="list-group-item">{{ timestamp }}</li>
+    </ul>
+  </div>
+  {{/with}}
+</template>
+
+
+<template name="rightSidebar">
+  <div id="rightSidebar" class="hide-for-medium hide-for-small right-anchored fullheight right-anchored sidebar {{getVisibility}}">
+    <ul class="list-group">
+      {{#each sidebarList}}
+      {{> inspectionSidebarItemTemplate}}
+      {{/each}}
+    </ul>
+    <!--<div class="panel" style="height: 197px; background-color: {{ data_color }}"></div>-->
+  </div>
+</template>
+
+<template name="inspectionSidebarItemTemplate">
+  <li class="list-group-item">{{ _id }}</li>
+</template>
