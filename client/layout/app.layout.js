@@ -46,3 +46,9 @@ Meteor.startup(function () {
     hidePages();
     showHomePage();
 });
+
+
+
+Template.registerHelper("resized", function (argument){
+  return Session.get('resize');
+});

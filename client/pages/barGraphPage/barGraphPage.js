@@ -69,16 +69,16 @@ renderBarChart = function(){
 };
 
 
-Template.barChartPage.resized = function(){
-  return Session.get('resize');
-};
-Template.barChartPage.rendered = function () {
+
+
+
+Template.barChartPage.onRendered(function(){
   $('.d3chart').css('height', window.innerHeight - 80);
-
   var resize = Session.get("resize");
-};
+});
 
-Template.barChartPage.destroyed = function () {
+
+Template.barChartPage.onDestroyed(function(){
   this.handle && this.handle.stop();
   $('#barChart').html('<svg id="barChartCanvas"></svg>');
-};
+});

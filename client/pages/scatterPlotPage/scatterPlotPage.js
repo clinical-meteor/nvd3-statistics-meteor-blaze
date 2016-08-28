@@ -72,17 +72,20 @@ renderScatterPlotChart = function(){
 
 
 
-Template.scatterPlotPage.resized = function(){
-  return Session.get('resize');
-};
-Template.scatterPlotPage.rendered = function () {
+
+Template.scatterPlotPage.helpers({
+  resized: function (){
+    return Session.get('resize');
+  }
+});
+
+Template.scatterPlotPage.onRendered(function(){
   $('.d3chart').css('height', window.innerHeight - 80);
 
   var resize = Session.get("resize");
-};
+});
 
-Template.scatterPlotPage.destroyed = function () {
+Template.scatterPlotPage.onDestroyed(function(){
   this.handle && this.handle.stop();
   $('#scatterPlot').html('<svg id="scatterPlotCanvas"></svg>');
-};
-
+});
