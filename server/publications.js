@@ -7,10 +7,10 @@ Meteor.publish('statistics', function () {
     return Statistics.find();
 });
 
-Meteor.publish('barData', function () {
+Meteor.publish('Graphs.BarChart', function () {
   return BarData.find();
 });
-Meteor.publish('horizontalBarData', function () {
+Meteor.publish('Graphs.HorizontalBarChart', function () {
   return HorizontalBarData.find();
 });
 Meteor.publish('bulletData', function () {
@@ -25,33 +25,33 @@ Meteor.publish('streamLayersData', function () {
 Meteor.publish('forceDirectData', function () {
   return ForceDirectData.find();
 });
-Meteor.publish('cumulativeLineData', function () {
+Meteor.publish('Graphs.CumulativeLineChart', function () {
   return CumulativeLineData.find();
 });
-Meteor.publish('simpleLineData', function () {
+Meteor.publish('Graphs.SimpleLineChart', function () {
   return SimpleLineData.find();
 });
-Meteor.publish('ultraSimpleLineData', function () {
+Meteor.publish('Graphs.LineChart', function () {
   return UltraSimpleLineData.find();
 });
-Meteor.publish('viewFinderLineData', function () {
+Meteor.publish('Graphs.ViewFinder', function () {
   return ViewFinderLineData.find();
 });
-Meteor.publish('multiBarData', function () {
+Meteor.publish('Graphs.MultiBarChart', function () {
   return MultiBarData.find();
 });
 Meteor.publish('pieData', function () {
   return PieData.find();
 });
-Meteor.publish('scatterData', function () {
+Meteor.publish('Graphs.ScatterPlot', function () {
   return ScatterData.find();
 });
-Meteor.publish('streamData', function () {
+Meteor.publish('Graphs.Stream', function () {
   return StreamData.find();
 });
 Meteor.publish('sunburstData', function () {
   return SunburstData.find();
 });
-Meteor.publish('randomData', function () {
+Meteor.publish('Graphs.RandomData', function () {
   return RandomData.find();
 });

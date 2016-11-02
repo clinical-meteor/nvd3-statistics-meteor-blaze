@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/scatter',
     template: 'scatterPlotPage',
     waitOn: function () {
-      return Meteor.subscribe('scatterData');
+      return Meteor.subscribe('Graphs.ScatterPlot');
     },
     after: function(){
       renderScatterPlotChart();

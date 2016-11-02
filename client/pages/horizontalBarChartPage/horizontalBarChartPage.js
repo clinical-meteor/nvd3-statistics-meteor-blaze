@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/horizontalbar',
     template: 'horizontalBarChartPage',
     waitOn: function () {
-      return Meteor.subscribe('horizontalBarData');
+      return Meteor.subscribe('Graphs.HorizontalBarChart');
     },
     after: function(){
       renderHorizontalBarChart();

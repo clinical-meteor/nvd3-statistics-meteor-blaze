@@ -1,25 +1,25 @@
 Deps.autorun(function () {
   Meteor.subscribe('statistics');
 
-  Meteor.subscribe('cumulativeLineData');
-  Meteor.subscribe('multiBarData');
-  Meteor.subscribe('randomData');
+  Meteor.subscribe('Graphs.CumulativeLineChart');
+  Meteor.subscribe('Graphs.MultiBarChart');
+  Meteor.subscribe('Graphs.RandomData');
 
 
-  Meteor.subscribe('barData');
-  Meteor.subscribe('horizontalBarData');
+  Meteor.subscribe('Graphs.BarChart');
+  Meteor.subscribe('Graphs.HorizontalBarChart');
   Meteor.subscribe('bulletData');
   Meteor.subscribe('collapsibleTreeData');
   Meteor.subscribe('streamLayersData');
   Meteor.subscribe('forceDirectData');
-  Meteor.subscribe('cumulativeLineData');
-  Meteor.subscribe('simpleLineData');
-  Meteor.subscribe('ultraSimpleLineData');
-  Meteor.subscribe('viewFinderLineData');
-  Meteor.subscribe('multiBarData');
+  Meteor.subscribe('Graphs.CumulativeLineChart');
+  Meteor.subscribe('Graphs.SimpleLineChart');
+  Meteor.subscribe('Graphs.LineChart');
+  Meteor.subscribe('Graphs.ViewFinder');
+  Meteor.subscribe('Graphs.MultiBarChart');
   Meteor.subscribe('pieData');
-  Meteor.subscribe('scatterData');
-  Meteor.subscribe('streamData');
+  Meteor.subscribe('Graphs.ScatterPlot');
+  Meteor.subscribe('Graphs.Stream');
   Meteor.subscribe('sunburstData');
 
 });

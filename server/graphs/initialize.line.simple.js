@@ -7,7 +7,7 @@ Meteor.startup(function () {
       recordId = SimpleLineData.insert({
         x: i,
         y:  Math.sin(i/10),
-        cos: Math.sin(i/10),
+        // cos: Math.sin(i/10),
         timestamp: new Date()
       });
       console.log('new record: ' + recordId);

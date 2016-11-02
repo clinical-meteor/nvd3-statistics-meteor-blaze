@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/stream',
     template: 'streamChartPage',
     waitOn: function () {
-      return Meteor.subscribe('streamData');
+      return Meteor.subscribe('Graphs.Stream');
     },
     after: function(){
       renderStreamChart();

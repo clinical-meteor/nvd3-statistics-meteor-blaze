@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/viewfinder',
     template: 'viewFinderLineGraphPage',
     waitOn: function () {
-      return Meteor.subscribe('viewFinderLineData');
+      return Meteor.subscribe('Graphs.ViewFinder');
     },
     after: function(){
       renderLineChartWithViewFinder();

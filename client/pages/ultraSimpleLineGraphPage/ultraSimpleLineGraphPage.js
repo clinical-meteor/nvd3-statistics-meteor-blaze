@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/ultrasimple',
     template: 'ultraSimpleLineGraphPage',
     waitOn: function () {
-      return Meteor.subscribe('ultraSimpleLineData');
+      return Meteor.subscribe('Graphs.LineChart');
     },
     after: function(){
       renderUltraSimpleLineChart();

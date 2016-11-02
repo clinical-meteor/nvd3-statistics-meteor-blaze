@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/cumulativeline',
     template: 'cumulativeLineGraphPage',
     waitOn: function () {
-      return Meteor.subscribe('cumulativeLineData');
+      return Meteor.subscribe('Graphs.CumulativeLineChart');
     },
     after: function(){
       renderCumulativeLineChart();

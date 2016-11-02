@@ -3,7 +3,7 @@ Router.map(function () {
     path: '/multibar',
     template: 'multiBarChartPage',
     waitOn: function () {
-      return Meteor.subscribe('multiBarData');
+      return Meteor.subscribe('Graphs.MultiBarChart');
     },
     after: function(){
       renderMultiBarChart();
